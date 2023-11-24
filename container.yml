@@ -1,4 +1,4 @@
-- name: "Nouveau CT"
+
   community.general.proxmox:
     node: "{{ CT_NAME }}"
     api_user: root@pam
