@@ -3,12 +3,10 @@
   tasks:
   - name: My first task
     community.general.proxmox:
-      url: "{{ PVE_URL }}"
-      user: "{{ PVE_USER }}"
-      password: "{{ PVE_PASS}}"
       validate_certs: false
       node: "{{ CT_NAME }}"
       api_user: "{{ API_USER }}"
+      api_password: "{{ PVE_PASS}}"
       api_host: bart
       password: "{{ CT_PASS }}"
       hostname: "{{ CT_HOSTNAME }}"
