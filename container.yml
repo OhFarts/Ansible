@@ -1,4 +1,4 @@
-- name: Create new container with minimal options use environment PROXMOX_PASSWORD variable(you should export it before)
+- name: Nouveau CT
   community.general.proxmox:
     node: "{{ CT_NAME }}"
     api_user: root@pam
