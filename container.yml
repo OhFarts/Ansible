@@ -1,5 +1,5 @@
 ---
-- hosts: Proxmox
+- hosts: proxmox
   tasks:
   - name: My first task
     community.general.proxmox:
