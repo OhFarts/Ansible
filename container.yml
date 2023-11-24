@@ -1,5 +1,5 @@
 ---
-- hosts: AWS
+- hosts: Proxmox
   tasks:
   - name: My first task
     community.general.proxmox:
