@@ -4,9 +4,9 @@
   - name: My first task
     community.general.proxmox:
       node: "{{ CT_NAME }}"
-      api_user: root@pam
-      api_host: node1
-      password: 123456
-      hostname: example.org
+      api_user: "{{ API_USER }}"
+      api_host: bart
+      password: "{{ CT_PASS }}"
+      hostname: "{{ CT_HOSTNAME }}"
       ostemplate: local:vztmpl/ubuntu-14.04-x86_64.tar.gz
       netif: '{"net0":"name=eth0,ip=dhcp,ip6=dhcp,bridge=vmbr0"}'
