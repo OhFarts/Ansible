@@ -1,5 +1,5 @@
 ---
-- hosts: proxmox
+- hosts: bart
   tasks:
   - name: My first task
     community.general.proxmox:
